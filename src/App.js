@@ -59,6 +59,7 @@ class Screen extends React.Component {
 
   pull = () => {
     const numbers = this.generateNumbers();
+
     const won = numbers.reduce((acc, number) => {
       return acc && number === 7;
     }, []);
