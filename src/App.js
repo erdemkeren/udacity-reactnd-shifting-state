@@ -62,7 +62,7 @@ class Screen extends React.Component {
 
     const won = numbers.reduce((acc, number) => {
       return acc && number === 7;
-    }, []);
+    }, true);
 
     this.setState({ won, numbers });
   };
