@@ -5,7 +5,7 @@ const styles = {
   screen: {
     width: "300px",
     height: "120px",
-    margin: "50px auto",
+    margin: "50px auto 0",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
@@ -14,26 +14,50 @@ const styles = {
     userSelect: "none"
   },
   numberBox: {
-    width: "70px",
-    height: "100px",
-    borderColor: "black",
-    borderStyle: "solid",
+    width: 70,
+    height: 100,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#FFF",
+    color: "rgb(230, 85, 85)",
+    borderColor: "rgb(181, 148, 91)",
     borderWidth: 3,
-    backgroundColor: "#FFF"
+    borderStyle: "solid"
   },
   numberContainer: {
     fontFamily: "'Pattaya', sans-serif",
     fontSize: 48,
     textAlign: "center",
-    display: "block"
+    display: "block",
+    fontWeight: "bolder"
+  },
+  pullButton: {
+    width: 50,
+    height: 50,
+    backgroundColor: "red",
+    color: "white",
+    borderRadius: 45,
+    textAlign: "center",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    lineHeight: 1.5,
+    cursor: "pointer"
   }
 };
 
-const PullButton = props => <div onClick={props.onClick}>Pull</div>;
+const PullButton = props => (
+  <div onClick={props.onClick} style={styles.pullButton}>
+    Pull
+  </div>
+);
 
 const NumberBox = props => {
+  const cls = props.number === 7 ? "imageRot" : "";
+
   return (
-    <div style={styles.numberBox}>
+    <div style={styles.numberBox} className={cls}>
       <span style={styles.numberContainer}>{props.number}</span>
     </div>
   );
