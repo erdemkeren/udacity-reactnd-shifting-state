@@ -4,7 +4,7 @@ The application is a very basic Lucky Seven implementation. See here:
 
 https://erdemkeren.github.io/udacity-reactnd-shifting-state
 
-![App screenshot](screenshot.png?raw=true "Screenshot")
+![App screenshot](screenshot.gif?raw=true "Screenshot")
 
 
 ## Installation
