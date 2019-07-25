@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/udacity-reactnd-shifting-state/precache-manifest.7fa71e3001534b65dba123c52916d3c6.js"
+  "/udacity-reactnd-shifting-state/precache-manifest.87d25bbebb628f2bcd93c559fcad1b1a.js"
 );
 
 workbox.clientsClaim();
